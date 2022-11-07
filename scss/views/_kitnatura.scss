@@ -75,10 +75,9 @@
 }
 @media (max-width: 1000px){
     .mainKitNatura{
-        width: 100%;
         height: auto;
         &__section {
-            grid-template-columns: 450px;    
+            grid-template-columns: 350px;    
             gap: 2px;
             width:100%;
             height: 100%;               
@@ -88,34 +87,38 @@
             figure {
                 flex-direction: row;
                 position: static;
-                width: 450px;
-                &:hover{
+                width: 350px;
                     img{
-                        filter:none;
-                    }                    
+                        width: 250px;
+                    }
+                    &:hover{
+                        img{
+                            filter:none;
+                        }
+                    }                                        
                     figcaption{
                         button{
                             background: $colorPrimario;
                             color:$colorCuaternario;
                         }
                     }
-                }
                 figcaption {
                     position: static;
                     width: 150px ;
                     background:linear-gradient(180deg, rgba(74,50,90,1) 0%, rgba(253,187,45,0) 100%);
                     p{
                         visibility: visible;
+                        font-size: 14px;
                     }
                     h2{
                         visibility: visible;
-                        font-size: 20px;
+                        font-size: 15px;
                     }
                     button{
                         visibility: visible;
                         background-color: $colorPrimario;
                         color: $colorCuaternario;
-                    }
+                    }                
                 }
             }           
         }
