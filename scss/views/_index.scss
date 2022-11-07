@@ -105,7 +105,7 @@
                             transition: all ease .5s;
                             transform-style: preserve-3d;
                             transform: perspective(700px) rotateY(0deg);
-                            border: 15px solid $colorPrimario;                             
+                            border: 30px solid $colorPrimario;                             
                             .frontal{
                                 display: block;
                                 width: 100%;
@@ -170,7 +170,8 @@
             }
             .section__slider{
                 gap: 2px;
-                .section_tarjeta{               
+                .section__tarjeta{
+                    min-width: 350px;              
                     &__contenedor{
                         a{
                             #btnControl:checked + label > img{ 
@@ -179,7 +180,11 @@
                                     transform: perspective(600px) rotateY(180deg);
                                     -webkit-box-shadow: 0px 0px 20px 1px $colorTerciario;                        
                                     box-shadow: 0px 0px 20px 1px $colorTerciario;
+
                                 }
+                            }
+                            figure{
+                                border: 10px solid $colorPrimario; 
                             }
                             
                         }    
