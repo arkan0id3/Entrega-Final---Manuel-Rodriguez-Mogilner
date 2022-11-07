@@ -370,9 +370,18 @@ footer p a {
   .mainIndex .section .titulo {
     font-size: 2rem;
   }
+  .mainIndex .section .section__slider .section_tarjeta {
+    width: 350px;
+  }
   .mainIndex .section .section__slider .section_tarjeta__contenedor a #btnControl:checked + label > img figure {
     -webkit-transform: perspective(600px) rotateY(180deg);
     transform: perspective(600px) rotateY(180deg);
+    -webkit-box-shadow: 0px 0px 20px 1px #98e7b1;
+    box-shadow: 0px 0px 20px 1px #98e7b1;
+  }
+  .mainIndex .section .section__slider .section_tarjeta__contenedor a #btnControl:checked ~ * + label > img figure {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
     -webkit-box-shadow: 0px 0px 20px 1px #98e7b1;
     box-shadow: 0px 0px 20px 1px #98e7b1;
   }
