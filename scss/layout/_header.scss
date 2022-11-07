@@ -1,0 +1,133 @@
+
+/*---- HEADER ----*/
+
+
+header {    
+    background: $colorPrimario;
+    border-bottom: 4px solid rgb(236,207,10);       
+    display: flex;
+    flex-direction: column;    
+    font-family: $tipografia1;
+    width: 100%;    
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+                     
+        h1{        
+            background-image: url('../assets/img/backgroundresized.jpg');
+            -webkit-background-clip: text;    
+            -webkit-text-fill-color: transparent;
+            text-shadow: -3px -4px $colorCuaternario, -1px -2px $colorPrimario;
+            font-size: 5rem;
+            color: transparent;
+            font-family: $tipografia1;
+            text-align: center;
+            font-weight: 600;
+            padding: 0px;
+            letter-spacing: -3px;
+            margin-left: 50px;            
+            span {
+                text-shadow: -3px -4px $colorTerciario, -1px -2px $colorPrimario;
+                font-size: 3rem;
+                letter-spacing: -1px;
+                text-align: start;
+                
+            }
+        }
+        nav{        
+            align-self: flex-end;
+            margin-left: auto;
+
+            
+            ul{
+                display: flex;
+                justify-content: space-around;           
+                li {
+
+                    margin: 0.7rem;
+                    margin-left: 4rem;
+                    margin-right: 3rem;
+                }
+            }    
+        }
+    }
+    .header__divImg{
+        align-self: flex-start;
+        --g-red: #d04b36;
+        --g-orange: #e36511;
+        --g-yellow: #ffba00;
+        --g-green: #00b180;
+        --g-blue: #147aab;
+        --g-indigo: #675997;
+        /*background: linear-gradient(90deg, rgba(236,207,10,1) 5%, rgba(152,231,177,1) 10%, rgba(231,152,206,1) 23%);*/
+        background: linear-gradient(
+            var(--g-red) 0%,
+            var(--g-red) 16.6666%,
+            var(--g-orange) 16.6666%,
+            var(--g-orange) 33.333%,
+            var(--g-yellow) 33.333%,
+            var(--g-yellow) 50%,
+            var(--g-green) 50%,
+            var(--g-green) 66.6666%,
+            var(--g-blue) 66.6666%,
+            var(--g-blue) 83.3333%,
+            var(--g-indigo) 83.3333%,
+            var(--g-indigo) 100%
+        );
+        width: 100%;
+        padding: 5px;
+        
+        
+        
+        a{
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            margin-right: 2.5rem;    
+            gap: 25px;
+            color: $colorPrimario;
+            svg{
+                
+                
+            }
+        }
+    }                  
+}
+
+@media (max-width: 862px){
+    header{
+        flex-wrap: wrap;
+
+        padding: 0px;
+
+        div{
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;        
+            h1{        
+                font-size: 4rem;
+                margin: 0px;               
+                span {                
+                    font-size: 3rem;
+                }
+            }   
+            nav{
+                align-self:center;
+                width: 100%;
+                ul{
+                    li{
+                        margin: 0;
+                    }
+                } 
+            }
+        }
+        .header__divImg {
+            a{
+                justify-content: center;
+                margin-right: 0;
+            }    
+        }
+       
+    }
+}
