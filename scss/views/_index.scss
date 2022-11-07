@@ -105,7 +105,7 @@
                             transition: all ease .5s;
                             transform-style: preserve-3d;
                             transform: perspective(700px) rotateY(0deg);
-                            border: 30px solid $colorPrimario;                             
+                            border: 15px solid $colorPrimario;                             
                             .frontal{
                                 display: block;
                                 width: 100%;
@@ -166,11 +166,11 @@
             align-self: flex-start;
             margin-top: 2px;
             .titulo{
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             .section__slider{
-                .section_tarjeta{
-                    width: 350px;                   
+                gap: 2px;
+                .section_tarjeta{               
                     &__contenedor{
                         a{
                             #btnControl:checked + label > img{ 
@@ -181,37 +181,11 @@
                                     box-shadow: 0px 0px 20px 1px $colorTerciario;
                                 }
                             }
-                            #btnControl:checked ~ * + label > img{ 
-                                figure{                           
-                                    -webkit-transform: perspective(600px) rotateY(0deg);
-                                    transform: perspective(600px) rotateY(0deg);
-                                    -webkit-box-shadow: 0px 0px 20px 1px $colorTerciario;                        
-                                    box-shadow: 0px 0px 20px 1px $colorTerciario;
-                                }
-                            }
-                            figure{
-                                position: absolute;
-                                transition: none;
-                                transform-style: unset;
-                                transform:none;
-                                .frontal{
-                                    display: flex;
-
                             
-
-                                }
-                                .trasera{
-                                    transform: unset;
-                                    backface-visibility: visible;
-                                    overflow: auto;
-                                    position: relative;
-
-                                }                                
-                            }
-                        }
+                        }    
                     }
-                }    
-            }
+                }
+            }    
         }
     }
 }

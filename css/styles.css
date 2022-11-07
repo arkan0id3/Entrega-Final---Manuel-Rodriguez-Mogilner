@@ -320,7 +320,7 @@ footer p a {
   transition: all ease 0.5s;
   transform-style: preserve-3d;
   transform: perspective(700px) rotateY(0deg);
-  border: 30px solid #4a325a;
+  border: 15px solid #4a325a;
 }
 .mainIndex .section .section__slider .section__tarjeta__contenedor a figure .frontal {
   display: block;
@@ -368,37 +368,16 @@ footer p a {
     margin-top: 2px;
   }
   .mainIndex .section .titulo {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  .mainIndex .section .section__slider .section_tarjeta {
-    width: 350px;
+  .mainIndex .section .section__slider {
+    gap: 2px;
   }
   .mainIndex .section .section__slider .section_tarjeta__contenedor a #btnControl:checked + label > img figure {
     -webkit-transform: perspective(600px) rotateY(180deg);
     transform: perspective(600px) rotateY(180deg);
     -webkit-box-shadow: 0px 0px 20px 1px #98e7b1;
     box-shadow: 0px 0px 20px 1px #98e7b1;
-  }
-  .mainIndex .section .section__slider .section_tarjeta__contenedor a #btnControl:checked ~ * + label > img figure {
-    -webkit-transform: perspective(600px) rotateY(0deg);
-    transform: perspective(600px) rotateY(0deg);
-    -webkit-box-shadow: 0px 0px 20px 1px #98e7b1;
-    box-shadow: 0px 0px 20px 1px #98e7b1;
-  }
-  .mainIndex .section .section__slider .section_tarjeta__contenedor a figure {
-    position: absolute;
-    transition: none;
-    transform-style: unset;
-    transform: none;
-  }
-  .mainIndex .section .section__slider .section_tarjeta__contenedor a figure .frontal {
-    display: flex;
-  }
-  .mainIndex .section .section__slider .section_tarjeta__contenedor a figure .trasera {
-    transform: unset;
-    backface-visibility: visible;
-    overflow: auto;
-    position: relative;
   }
 }
 .mainRevista {
